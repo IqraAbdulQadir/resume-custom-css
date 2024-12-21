@@ -1,0 +1,57 @@
+/* ABOUT PAGE */
+
+.about {
+    background: linear-gradient(135deg, #531e3e, #724956, #31092f); /* Subtle gradient background */
+  
+  }
+
+
+  
+  /* About.module.css */
+  .container {
+ 
+    padding: 2rem;
+    background: linear-gradient(135deg, #531e3e, #724956, #31092f); /* Subtle gradient background */
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .innerContainer {
+    max-width: 800px;
+    padding: 2rem;
+    
+
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .intro {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .lang {
+    margin-top: 2rem;
+  }
+  
+  .subheading {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .list {
+    padding-left: 1.5rem;
+  }
+  
+  .list li {
+    margin-bottom: 0.5rem;
+    list-style-type: circle;
+    color: white;
+  }
+  
