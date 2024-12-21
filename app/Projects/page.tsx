@@ -3,7 +3,6 @@
 import React from 'react';
 import NavBar from '@/components/navbar';
 import Footer from '@/components/footer';
-import ai from '@/public/ai.jpeg'
 
 
 const projects = [
@@ -50,7 +49,7 @@ const ProjectsPage: React.FC = () => {
       <main className="main-content">
         <section className="projects-section">
           <h1>My Projects</h1>
-          <p>Here are some of the projects I've worked on. Click on the links to view them live or check out the source code.</p>
+          <p>Here are some of the projects I&apos;ve worked on. Click on the links to view them live or check out the source code.</p>
           <div className="projects-grid">
             {projects.map((project, index) => (
               <div className="project-card" key={index}>

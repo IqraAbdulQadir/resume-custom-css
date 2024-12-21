@@ -3,8 +3,6 @@
 import React from 'react';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
-import styles from '@/app/about/About.module.css';
-import ai from '@/public/ai.jpeg'
 
 const skills = [
   { name: 'HTML', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg', proficiency: 90 },
@@ -27,7 +25,7 @@ const About: React.FC = () => {
           <h1>Get To Know Me</h1>
 
           <div className='about-info'>
-<p className='about-p'>Hello! I'm Iqra Abdul Qadir, a dedicated student specializing in Agentic AI and Robotics. My passion lies in exploring the realms of artificial intelligence and cutting-edge technology. With a strong foundation in these fields, I am committed to pushing the boundaries of innovation and contributing to the future of AI and robotics.
+<p className='about-p'>Hello! I&apos;m Iqra Abdul Qadir, a dedicated student specializing in Agentic AI and Robotics. My passion lies in exploring the realms of artificial intelligence and cutting-edge technology. With a strong foundation in these fields, I am committed to pushing the boundaries of innovation and contributing to the future of AI and robotics.
 
 I am fluent in Urdu, Arabic, and English, which allows me to communicate effectively in diverse environments. I possess excellent leadership and teamwork skills, honed through various collaborative projects and initiatives. I hold a degree in Islamic Sciences and am currently studying at GIAIC. Additionally, I am a professional writer with a knack for crafting engaging and informative content.</p></div>
 
@@ -61,7 +59,9 @@ I am fluent in Urdu, Arabic, and English, which allows me to communicate effecti
       </div>
     </section>
     </main>
+    <Footer/>
     </div>
+    
   );
 };
 

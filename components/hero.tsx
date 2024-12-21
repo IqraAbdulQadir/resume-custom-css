@@ -1,20 +1,11 @@
 "use client";
 import React from 'react'
 import Image from 'next/image'
-import pp from '../public/pp.png'
 import { useRouter } from "next/navigation";
 
 
 const Hero : React.FC = () => {
     const router = useRouter();
-
-    const goToHome = () => {
-        router.push('/');
-    };
-
-    const goToAbout = () => {
-        router.push('/About');
-    };
 
     const goToProjects = () => {
         router.push('/Projects');
@@ -26,9 +17,9 @@ const Hero : React.FC = () => {
     return (
         <section className='hero min-h-screen'>
             <div className="hero-content">
-                <h1 className='typing-animation'>HI, I'M IQRA ABDUL QADIR</h1>
+                <h1 className='typing-animation'>HI, I AM IQRA ABDUL QADIR</h1>
                 <h2>Certified Robotic & Agentic AI Engineering Student</h2>
-                <p>Short introduction or bio goes here. Highlight your skills, experience, or what makes you unique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium odit natus adipisci quod sequi ullam.</p>
+                <p>Passionate about growth and innovation, I specialize in Agentic AI and robotics. Fluent in multiple languages and a professional content writer, I thrive on turning complex challenges into impactful solutions. Let&#39;s connect and create something extraordinary!</p>
                 <div className="cta-buttons">
                     <button onClick={goToContact} className="cta-button">Contact Me</button>
                     <button onClick={goToProjects} className="cta-button">View My Work</button>

@@ -1,29 +1,8 @@
 import React from "react";
-import { useRouter } from "next/navigation";
-import LinkedIn from "@/pubic/LinkedIn.svg"; // Assuming the correct path
-import Github from "@/public/Github.svg";
-import Discord from "@/public/Discord.svg";
+
 import Image from "next/image";
-import { collectRoutesUsingEdgeRuntime } from "next/dist/build/utils";
 
 const Footer : React.FC = () => {
-    const router = useRouter();
-
-    const goToHome = () => {
-        router.push('/');
-    };
-
-    const goToAbout = () => {
-        router.push('/About');
-    };
-
-    const goToProjects = () => {
-        router.push('/Projects');
-    }
-
-    const goToContact = () => {
-        router.push('/Contact');
-    }
 
     return (
         <footer className="footer">
