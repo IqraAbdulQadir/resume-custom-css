@@ -1,8 +1,7 @@
 "use client";
 
 import React from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
+
 
 const skills = [
   { name: 'HTML', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg', proficiency: 90 },
@@ -18,8 +17,7 @@ const skills = [
 
 const About: React.FC = () => {
   return (
-    <div className="container">
-      <Navbar />
+    
       <main className="main-content">
         <section className="abouts-section">
           <h1>Get To Know Me</h1>
@@ -59,9 +57,7 @@ I am fluent in Urdu, Arabic, and English, which allows me to communicate effecti
       </div>
     </section>
     </main>
-    <Footer/>
-    </div>
-    
+   
   );
 };
 

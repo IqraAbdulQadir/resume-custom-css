@@ -1,8 +1,6 @@
 "use client";
 
 import React from 'react';
-import NavBar from '@/components/navbar';
-import Footer from '@/components/footer';
 
 
 const projects = [
@@ -44,8 +42,7 @@ const projects = [
 
 const ProjectsPage: React.FC = () => {
   return (
-    <div className="container">
-      <NavBar />
+ 
       <main className="main-content">
         <section className="projects-section">
           <h1>My Projects</h1>
@@ -70,8 +67,7 @@ const ProjectsPage: React.FC = () => {
           </div>
         </section>
       </main>
-      <Footer />
-    </div>
+
   );
 };
 

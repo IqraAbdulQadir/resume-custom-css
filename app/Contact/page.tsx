@@ -1,15 +1,13 @@
 "use client";
 
 import React from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
+
 
 
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="container">
-      <Navbar />
+ 
       <main className="main-content">
         <section className="contact-section">
           <div className="split-screen">
@@ -56,8 +54,7 @@ const ContactPage: React.FC = () => {
           </div>
         </section>
       </main>
-      <Footer />
-    </div>
+  
   );
 };
 
