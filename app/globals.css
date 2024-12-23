@@ -191,119 +191,165 @@ body {
 }
 
 
-/* Hero */
-/* 
-.hero {
-  background-color: #ac6f82;
-} */
-
 /* Hero Section Styles */
 .hero {
-  background: linear-gradient(135deg, #531e3e, #724956, #31092f); /* Subtle gradient background */
+  background: linear-gradient(135deg, #531e3e, #724956, #31092f);
   color: white;
-  text-align: center;
-  padding: 50px 20px;
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
+  text-align: center;
+}
+
+/* Adjust layout for larger screens */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 20px;
+  }
 }
 
 .hero-content {
   max-width: 800px;
-  margin: 0; /* Remove auto margin to align left */
-  padding: 20px; /* Add padding if needed */
-  text-align: center; /* Align text to the left */
+  padding: 20px;
   font-family: 'Playfair Display', serif;
 }
 
 .image {
-  display: flex; /* Enable flexbox for the image container */
+  display: flex;
+  justify-content: center;
   border: 12px solid #460741;
   border-radius: 25px;
-  filter: drop-shadow(1px 10px 20px rgb(119, 8, 119)); /* Add
-  justify-content: flex-end; /* Align the image to the right */
+  filter: drop-shadow(1px 10px 20px rgb(119, 8, 119));
   background-color: rgba(0, 0, 0, 0.8);
+  max-width: 90%;
+}
+
+@media (min-width: 768px) {
+  .image {
+    max-width: 500px;
+    justify-content: flex-end;
+  }
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* Style for the heading */
-.typing-animation {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  white-space: nowrap;       /* Keeps the text on a single line */
-  overflow: hidden;          /* Hides the overflowed text */
-  border-right: 2px solid black; /* Simulates the cursor */
-  animation: typing 3s steps(30, end), blink-caret 0.5s step-end 5;
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
 }
 
-/* Typing animation */
+.typing-animation {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black;
+  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
 }
 
-/* Blinking caret */
 @keyframes blink-caret {
   50% { border-color: transparent; }
 }
 
-
-
 h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 20px;
-  text-align: center;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.5em;
+  }
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 30px;
-  text-align: center;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.2em;
+  }
 }
 
 .cta-buttons {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .cta-buttons {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center; /* Center buttons horizontally */
+  }
 }
 
 .cta-button {
-  position: relative; /* Position relative for the pseudo-element */
-  background-color: #660e60; /* Button background color */
+  position: relative;
+  background-color: #660e60;
   color: white;
   padding: 10px 20px;
-  border: none; /* Remove the default border */
+  border: none;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  margin: 0 10px;
+  margin: 0;
   transition: background-color 0.3s;
-  z-index: 1; /* Ensure the button text is above the pseudo-element */
-  align-items: center;
-  justify-content: center;
+  z-index: 1;
   filter: drop-shadow(2px 2px 20px rgba(198, 31, 240, 0.5));
 }
 
 .cta-button::before {
-  content: ""; /* Required for the pseudo-element */
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 5px; /* Match the button's border radius */
-  background: linear-gradient(135deg, #91278a, #660e60); /* Gradient colors */
-  z-index: -1; /* Place behind the button */
-  padding: 2px; /* Adjust this to control the border thickness */
+  border-radius: 5px;
+  background: linear-gradient(135deg, #91278a, #660e60);
+  z-index: -1;
+  padding: 2px;
 }
 
 .cta-button:hover {
-  background-color: #893f71; /* Hover background color */
+  background-color: #893f71;
 }
+
+/* Responsive Font Sizes */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
 
 /* Projects Page Styles */
 .projects-section {

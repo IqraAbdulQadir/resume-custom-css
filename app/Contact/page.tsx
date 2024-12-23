@@ -7,7 +7,8 @@ import React from 'react';
 
 const ContactPage: React.FC = () => {
   return (
- 
+    
+      
       <main className="main-content">
         <section className="contact-section">
           <div className="split-screen">
@@ -54,7 +55,8 @@ const ContactPage: React.FC = () => {
           </div>
         </section>
       </main>
-  
+      
+    
   );
 };
 
